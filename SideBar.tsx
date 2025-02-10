@@ -13,13 +13,13 @@ function SideBar({ items, icons, logo }: Props) {
     <div className="d-flex">
       {/* Sidebar */}
       <div className={`bg-dark text-white p-2 vh-100 position-fixed  w-60"}`}>
-        <img src={logo}></img>
+        <img src={logo} className="p-1"></img>
         <ul className="list-unstyled">
           <li>
-            <input type="serach" style={{ width: "100px", height: "25px" }} />
+            <input type="serach" className="p-1" style={{ width: "100px", height: "25px" }} />
           </li>
           {items.map((item, index) => (
-            <li key={index}>
+            <li key={index} className="p-1">
               <a href="#" className="text-white text-decoration-none">
                 {icons[index]}
                 {item}
