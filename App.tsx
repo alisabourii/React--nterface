@@ -2,6 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import SideBar from "./components/SideBar"
+import Toolbar from "./components/Toolbar";
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <SideBar items={items} icons={icons} logo="../src\assets\logo.svg"></SideBar>
-      
+      <Toolbar></Toolbar>
     </>
   )
 }
